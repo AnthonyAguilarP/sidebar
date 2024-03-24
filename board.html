@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            background-color: #1E1E1E;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .row {
+            display: flex;
+        }
+        .row-0 {
+            width: 100%;
+            height: 20%;
+            align-items: center; /* Centra los elementos verticalmente */
+            justify-content: center; /* Centra los elementos horizontalmente */
+        }
+        .col-0 {
+            flex-grow: 1; /* Ocupa el espacio restante verticalmente */
+        }
+        aside {
+            width: 12%;
+            background-color: rgba(0, 0, 0, 0.52);
+            height: 100vh;
+            display: flex;
+            flex-direction: column; /* Apila los elementos uno encima del otro */
+            justify-content: center; /* Centra los elementos horizontalmente */
+            align-items: center; /* Centra los elementos verticalmente */
+        }
+        .profile-img-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .profile-img-1 {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 5px; /* Espacio entre la imagen y el texto */
+        }
+        .username-1 {
+            color: #FFF;
+            font-size: 12px; /* Cambiado de "size" a "font-size" */
+            font-weight: bold;
+            text-align: center;
+        }
+        .row-1 {
+            width: 100%;
+            height: 60%;
+            flex-direction: column;
+        }
+        .row-2 {
+            width: 100%;
+            height: 20%;
+        }
+        .line-1 {
+            width: 100%;
+            height: 0.5px;
+            background-color: #ffffff6a;
+        }
+        .option {
+            background-color: #0000003e;
+            width: 100%;
+            height: 10%;
+            display: flex; /* Activamos flexbox */
+            align-items: center;
+            color: #ffffff;
+            font-size: 9px;
+        }
+        .icon-1 {
+            width: auto;
+            height: 80%;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="row col-0">
+        <aside>
+            <div class="row-0 row">
+                <div class="profile-img-container">
+                    <img src="Perfil.jpg" class="profile-img-1"/>
+                    <p class="username-1">Bolainas23</p>
+                </div>
+            </div>
+            <div class="row-1 row">
+                <div class="line-1"></div>
+                <article class="option">
+                    <img src="icon/teamwork.svg" alt="" class="icon-1">
+                    teamwork
+                </article>
+                <article class="option">
+                    <img src="icon/teamwork.svg" alt="" class="icon-1">
+                    teamwork
+                </article>
+                <article class="option">
+                    <img src="icon/teamwork.svg" alt="" class="icon-1">
+                    teamwork
+                </article>
+            </div>
+            <div class="row-2 row">
+                <div class="line-1"></div>
+            </div>
+        </aside>
+        
+    </div>
+</body>
+</html>
